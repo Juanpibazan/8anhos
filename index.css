@@ -3,18 +3,18 @@
   font-family: poppins;
 }
 html{
-  min-height: 100%;
+  min-height: 100vh;
 }
 body{
   margin: 0;
   padding: 0.5em;
-  min-height: 100%;
+  min-height: 100vh;
   font-family: poppins;
   /*background: url('fondo1.jpg') no-repeat center top;*/
 }
 .fondo{
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   position: absolute;
   z-index: -2;
 }
