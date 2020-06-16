@@ -45,7 +45,7 @@ body{
 }
 .active{
   transform: translateX(0px);
-  transform: translateY(250px);
+  transform: translateY(80px);
 }
 .nav_bar ul{
   display: flex;
@@ -108,6 +108,7 @@ p{
   }
 
   .primary{
+    grid-row-start: 2;
     grid-template: 300px 200px / 1fr;
     grid-template-areas: "video"
                           "description";
@@ -128,4 +129,8 @@ p{
     text-align: center;
     margin: 0;
   }
+  .active{
+  transform: translateX(0px);
+  transform: translateY(250px);
+}
 }
