@@ -92,6 +92,9 @@ p{
 
 
 @media screen and (max-width: 1000px) {
+  .hero{
+    grid-template-rows: 200px 1fr;
+  }
   .nav_bar a{
     font-size: 15px;
   }
