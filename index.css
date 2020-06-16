@@ -2,21 +2,25 @@
   src: url('fonts/poppins-regular.ttf');
   font-family: poppins;
 }
+
 html{
-  min-height: 100vh;
+  min-height: 100%;
+  background: url('imagenes/fondo3.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
+
 body{
   margin: 0;
   padding: 0.5em;
-  min-height: 100vh;
+  min-height: 100%;
   font-family: poppins;
   /*background: url('fondo1.jpg') no-repeat center top;*/
 }
 .fondo{
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   position: absolute;
-  z-index: -2;
+  z-index: -1;
 }
 
 .hero{
