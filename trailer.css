@@ -45,7 +45,7 @@ body{
 }
 .active{
   transform: translateX(0px);
-  transform: translateY(180px);
+  transform: translateY(250px);
 }
 .nav_bar ul{
   display: flex;
