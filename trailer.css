@@ -43,12 +43,8 @@ body{
   transition: 1s;
 }
 .active{
-  grid-area: primary;
-  display: grid;
-  grid-template-columns: 500px 1fr;
-  grid-gap: 0px 20px;
-  align-items: center;
   transform: translateX(0px);
+  transform: translateY(100px);
 }
 .nav_bar ul{
   display: flex;
