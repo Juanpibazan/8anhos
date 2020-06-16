@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>8 años</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <img  class="fondo" src="imagenes/fondo3.jpg" alt="">
+    <section class="hero">
+      <nav class="nav_bar">
+        <ul>
+          <a href="index.html"><li><p><span>8</span><span>AÑOS</span></p></li></a>
+          <a href="index.html"><li>HOME</li></a>
+          <a href="trailer.html"><li>TRAILER</li></a>
+          <a href="sinopsis.html"><li>SINOPSIS</li></a>
+          <a href="reparto.html"><li>REPARTO</li></a>
+          <a href="team.html"><li>TEAM</li></a>
+        </ul>
+      </nav>
+      <div class="primary">
+        <div class="sub_primary">
+          <p class="logo-container">
+            <span>8</span>
+            <span>AÑOS</span>
+          </p>
+          <div class="title-container">
+            <h1 class="title">El amor es un viaje sin rumbo</h1>
+            <button type="button" name="button">Ver Trailer</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <ul>
+          <a href="#"><li>Alex<br>Monner</li></a>
+          <a href="#"><li>Omar<br>Ayuso</li></a>
+          <a href="#"><li>Carlos<br>Mestanza</li></a>
+        </ul>
+      </div>
+    </section>
+    <script type="text/javascript">
+      const $trailer = document.querySelector('button');
+      $trailer.addEventListener('click', () =>{
+        window.location='trailer.html';
+      });
+    </script>
+  </body>
+</html>

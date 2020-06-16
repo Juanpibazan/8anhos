@@ -1,0 +1,181 @@
+@font-face{
+  src: url('fonts/poppins-regular.ttf');
+  font-family: poppins;
+}
+
+body{
+  margin: 0;
+  padding: 0.5em;
+  font-family: poppins;
+  /*background: url('fondo1.jpg') no-repeat center top;*/
+}
+.fondo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero{
+  display: grid;
+  grid-template-rows: 100px 1fr 200px;
+  grid-template-areas: "nav"
+                        "primary"
+                        "footer";
+}
+
+.nav_bar{
+  grid-area: nav;
+}
+
+.primary{
+  display: flex;
+  justify-content: center;
+  grid-area: primary;
+}
+
+.footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_bar ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+h1{
+  color: white;
+  margin: 0;
+  font-size: 35px;
+}
+
+.nav_bar a:hover{
+  color: #F3CA3E;
+}
+
+.nav_bar span:first-child{
+  color: #F3CA3E;
+}
+
+.nav_bar span:last-child:hover{
+  color: white;
+}
+
+.nav_bar a:first-child:hover{
+  color: white;
+}
+
+.sub_primary{
+  display: grid;
+  grid-template: 300px 100px / 500px 1fr;
+  grid-template-areas: "img ."
+                        ". title"
+}
+
+.logo-container{
+  grid-area: img;
+}
+
+.title-container{
+  grid-area: title;
+}
+
+.title-container button{
+  display: block;
+  margin: auto;
+  padding: 10px 15px;
+  background: #F3CA3E;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.title-container button:hover{
+  background: white;
+  color: #F3CA3E;
+}
+
+.footer ul{
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer a{
+  margin-right: 70px;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.footer a:hover{
+  color: #F3CA3E;
+}
+
+.logo-container{
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container span{
+  font-size: 250px;
+  color: #F3CA3E;
+}
+
+.logo-container span:last-child{
+  font-size: 150px;
+  color: #FFFFFF;
+}
+
+.nav_bar a:nth-of-type(2){
+  color: #F3CA3E;
+}
+@media screen and (max-width: 1000px) {
+  .sub_primary{
+    margin-top: 30px;
+    display: grid;
+    grid-template: 300px 100px / 1fr;
+    grid-template-areas: "img"
+                          "title"
+  }
+  .nav_bar a{
+    font-size: 15px;
+  }
+  .nav_bar ul{
+    display: block;
+  }
+  .nav_bar{
+    text-align: center;
+  }
+
+  .footer a{
+    margin-right: 20px;
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+  .hero{
+    grid-template-rows: 150px 1fr 200px;
+  }
+  .logo-container span:last-child{
+    font-size: 100px;
+  }
+  .title-container button{
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 40px;
+  }
+}
