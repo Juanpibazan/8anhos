@@ -41,7 +41,7 @@ body{
   grid-gap: 0px 20px;
   align-items: center;
   transform: translateX(-3000px);
-  transition: 1s;
+  transition: 3s;
 }
 .active{
   transform: translateX(0px);
