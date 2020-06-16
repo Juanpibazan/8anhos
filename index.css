@@ -89,7 +89,7 @@ h1{
   display: grid;
   grid-template: 300px 100px / 500px 1fr;
   grid-template-areas: "img ."
-                        ". title"
+                        ". title";
 }
 
 .logo-container{
