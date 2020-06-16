@@ -2,17 +2,20 @@
   src: url('fonts/poppins-regular.ttf');
   font-family: poppins;
 }
-
+html{
+  min-height: 100%;
+}
 body{
   margin: 0;
-  /*padding: 0.5em;*/
+  padding: 0.5em;
+  min-height: 100%;
   font-family: poppins;
   /*background: url('fondo1.jpg') no-repeat center top;*/
   overflow: auto;
 }
 .fondo{
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   z-index: -2;
 }
