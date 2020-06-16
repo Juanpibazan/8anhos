@@ -34,7 +34,7 @@ body{
 }
 
 .primary{
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-area: primary;
   display: grid;
   grid-template-columns: 500px 1fr;
