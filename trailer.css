@@ -37,7 +37,7 @@ body{
   grid-row-start: 3;
   grid-area: primary;
   display: grid;
-  grid-template-columns: 500px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 0px 20px;
   align-items: center;
   transform: translateX(-3000px);
