@@ -109,6 +109,7 @@ h1{
   border: none;
   color: white;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .title-container button:hover{
