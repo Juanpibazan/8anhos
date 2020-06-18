@@ -120,6 +120,7 @@ p{
     grid-area: video;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
   }
 
   .description{
