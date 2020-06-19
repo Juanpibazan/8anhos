@@ -9,12 +9,20 @@
     <section class="hero">
       <nav class="nav_bar">
         <ul>
-          <a href="index.html"><li><p><span>8</span><span>AÑOS</span></p></li></a>
           <a href="index.html"><li>HOME</li></a>
           <a href="trailer.html"><li>TRAILER</li></a>
           <a href="sinopsis.html"><li>SINOPSIS</li></a>
           <a href="reparto.html"><li>REPARTO</li></a>
-          <a href="team.html"><li>TEAM</li></a>
+          <a href="trailer.html"><li>MÚSICA</li></a>
+          <div class="dropdown" onmouseover="mostrarDrop()" onmouseout="quitarDrop()">
+            <button class="dropbtn">TEAM</button>
+            <div id="myDropdown" class="dropdown-content invisible">
+              <a href="#">Dirección</a>
+              <a href="#">Producción</a>
+              <a href="#">Fotografía</a>
+              <a href="#">Peinado & Maquillaje</a>
+            </div>
+          </div>
         </ul>
       </nav>
       <div class="primary">
@@ -25,7 +33,8 @@
           </p>
           <div class="title-container">
             <h1 class="title">El amor es un viaje sin rumbo</h1>
-            <button type="button" name="button">Ver Trailer</button>
+            <h1 class="title">Una película de JD Alcazar</h1>
+            <button id="title-button" type="button" name="button">Ver Trailer</button>
           </div>
         </div>
       </div>
@@ -38,10 +47,18 @@
       </div>
     </section>
     <script type="text/javascript">
-      const $trailer = document.querySelector('button');
+      const $trailer = document.querySelector('#title-button');
       $trailer.addEventListener('click', () =>{
         window.location='trailer.html';
       });
+
+      const $myDropdown = document.querySelector('#myDropdown');
+      function mostrarDrop(){
+        $myDropdown.classList.remove('invisible');
+      };
+      function quitarDrop(){
+        $myDropdown.classList.add('invisible');
+      };
     </script>
   </body>
 </html>
