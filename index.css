@@ -25,7 +25,7 @@ body{
 
 .hero{
   display: grid;
-  grid-template-rows: 100px 1fr 200px;
+  grid-template-rows: 200px 1fr 200px;
   grid-template-areas: "nav"
                         "primary"
                         "footer";
@@ -87,7 +87,7 @@ h1{
 
 .sub_primary{
   display: grid;
-  grid-template: 300px 100px / 500px 1fr;
+  grid-template: 300px 150px / 500px 1fr;
   grid-template-areas: "img ."
                         ". title";
 }
@@ -148,9 +148,56 @@ h1{
   color: #FFFFFF;
 }
 
-.nav_bar a:nth-of-type(2){
+.nav_bar a:first-child{
   color: #F3CA3E;
 }
+
+.title:nth-of-type(2){
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+}
+
+.dropbtn{
+  border: none;
+  background: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus{
+  color: #F3CA3E;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.invisible{
+  display: none;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+  z-index: 1;
+  border-radius: 2px;
+}
+
+.dropdown-content a{
+  color: white;
+  font-size: 20px;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  color: #F3CA3E;
+}
+
+
 @media screen and (max-width: 1000px) {
   .sub_primary{
     margin-top: 30px;
@@ -160,13 +207,22 @@ h1{
                           "title";
   }
   .nav_bar a{
-    font-size: 20px;
+    font-size: 15px;
   }
   .nav_bar ul{
     display: block;
   }
   .nav_bar{
     text-align: center;
+  }
+
+  .nav_bar button{
+    font-size: 15px;
+  }
+
+  .dropdown{
+    display: flex;
+    justify-content: center;
   }
 
   .footer a{
